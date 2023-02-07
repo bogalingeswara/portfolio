@@ -1,0 +1,243 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+        padding: 0;
+        /* margin: 0; */
+        font-weight: bold;
+}
+
+:root {
+        --light: white;
+        --darkdark: rgb(26, 27, 50);
+}
+
+body {
+        background-color: var(--darkdark);
+        color: var(--light);
+}
+
+.banner {
+        height: 100vh;
+        padding: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.text {
+        width: max-content;
+        background-color: var(--light);
+        color: var(--darkdark);
+        padding: .2rem 1rem;
+}
+
+.banner>.image {
+        width: 35%;
+        border: 5px solid;
+        position: relative;
+        transition: all .3s;
+}
+
+.banner>.image::after {
+        content: "";
+        color: var(--darkdark);
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: -1;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        margin: 5%;
+        transition: all .3s;
+}
+
+.banner>.image>img {
+        padding: 10px;
+        width: 100%;
+}
+
+.banner>.image:hover {
+        transform: translate(-5px, -5px);
+}
+
+
+.banner>.image:hover::after {
+        transform: translate(10px, 10px);
+}
+
+/* =============== */
+/* education */
+/* =============== */
+
+.education {
+        height: 100vh;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+}
+
+/* ============== */
+/*  skills  */
+/* ============== */
+
+.skills {
+        height: max-content;
+        padding: 2% 5%;
+        background-color: var(--light);
+        color: var(--darkdark);
+}
+
+.skills-list {
+        padding: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+
+.skills-list>h3 {
+        border-radius: 5px;
+        padding: .2rem 1rem;
+        background-color: var(--darkdark);
+        color: var(--light);
+}
+
+/* ============= */
+/*  projects */
+/*  ============ */
+
+.projects {
+        padding: 4% 5%;
+        overflow: hidden;
+}
+
+.project-images {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+}
+
+.project-images>.project {
+        position: relative;
+        transition: all .3s;
+}
+
+.project-images>.project::after {
+        content: "";
+        border-radius: 5px;
+        color: var(--darkdark);
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: -1;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        transition: all .3s;
+}
+
+.project-images>.project:hover {
+        transform: translate(-8px, -8px);
+}
+
+.project-images>.project:hover::after {
+        transform: translate(8px, 8px);
+}
+
+.project-images>.project>img {
+        width: 100%;
+        border: 5px solid white;
+        border-radius: 5px;
+        transition: all .3s;
+}
+
+.project-images>.project:hover>img {
+        border: 5px solid rgb(255, 59, 59);
+}
+
+.project-images>.project>.btn {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+}
+
+/* =============== */
+/*  contact */
+/* =============== */
+
+.contact {
+        padding: 2% 5%;
+        background-color: rgb(226, 226, 0);
+        color: var(--darkdark);
+}
+
+textarea {
+        resize: none;
+}
+
+.contact>.email {
+        padding: 4%;
+        width: 60%;
+        margin: 0 auto;
+        border-bottom: 5px solid;
+        border-radius: 5px;
+}
+
+.contact>.email>.user-mail {
+        display: flex;
+}
+
+.contact>.social-media {
+        padding: 2%;
+        display: flex;
+        justify-content: space-around;
+}
+
+.contact>.social-media>a {
+        width: 10%;
+}
+
+.contact>.social-media>a>img {
+        width: 100%;
+}
+
+@media(max-width: 600px) {
+        .banner {
+                height: max-content;
+                flex-direction: column;
+                justify-content: center;
+                align-items: self-start;
+                margin-bottom: 5%;
+        }
+        .banner>.image {
+                width: 70%;
+        }
+        .text{
+                width: fit-content;
+        }
+        .contact>.email {
+                width: 90%;
+        }
+
+        .contact>.social-media{
+                margin: 1% 0%;
+        }
+        .contact>.social-media>a {
+                width: 15%;
+        }
+}

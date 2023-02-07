@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+                (function () {
+                        emailjs.init("1FnCRYQpOG2INUmwV");
+                })();
+        </script>
+        <title>Portfolio</title>
+</head>
+
+<body>
+
+        <div class="banner">
+                <div class="name">
+                        <h3 class="text mb-3">My Self!</h3>
+                        <h1>Gubbala.</h1>
+                        <h1>Bogalingeswara Venkatesh</h1>
+                        <h3 class="text mt-3">A Front-end Developer</h3>
+                </div>
+                <div class="image">
+                        <img src="image.jpg" alt="image">
+                </div>
+        </div>
+
+        <!-- =============== -->
+        <!-- education  -->
+        <!-- ============== -->
+        <div class="education">
+                <h2 class="mb-4 d-flex align-items-center">
+                        <img class="bg-light p-1 me-2 rounded" src="education.png" alt="education" width="36px">
+                        <span>Education</span>
+                </h2>
+                <div class="mb-4">
+                        <h3 class="text mb-3">B-Tech</h3>
+                        <h4>Gayatri Vidya Parishad Collage for Degree and PG Courses <br> Branch: Electronics and
+                                Communication Engg.</h4>
+                </div>
+                <div class="mb-4">
+                        <h3 class="text mb-3">Diploma</h3>
+                        <h4>Govt. Polytechnic Anakapalli, Rebaka <br> Branch: Electronics and Communication Engg.</h4>
+                </div>
+                <div class="mb-4">
+                        <h3 class="text mb-3">Schooling</h3>
+                        <h4>D.A.V Cent. Public School</h4>
+                </div>
+        </div>
+
+        <!-- ================ -->
+        <!--  skills -->
+        <!-- ================ -->
+
+        <div class="skills">
+                <h2 class="mb-4 d-flex align-items-center">
+                        <img class=" p-1 me-2 rounded" src="brain.png" alt="skills" width="40px">
+                        <span>Skills</span>
+                </h2>
+                <div class="skills-list">
+                        <h3>HTML</h3>
+                        <h3>CSS</h3>
+                        <h3>Bootstrap</h3>
+                        <h3>Javascript</h3>
+                </div>
+        </div>
+
+        <!-- ================= -->
+        <!--  projects  -->
+        <!-- ================= -->
+
+        <div class="projects">
+                <h2 class="mb-4 d-flex align-items-center">
+                        <img class="bg-light p-1 me-2 rounded" src="projector.png" alt="projects" width="36px">
+                        <span>Projects</span>
+                </h2>
+                <div class="project-images">
+                        <div class="project">
+                                <img src="password-generator.png" alt="password generator">
+                                <button class="btn btn-light"><a
+                                                href="https://random-user-password-generator.netlify.app">Preview</a></button>
+                        </div>
+                        <div class="project">
+                                <img src="r-o-s.png" alt="rock paper scissor">
+                                <button class="btn btn-light"><a
+                                                href="https://rk-pr-sr-game.netlify.app">Preview</a></button>
+                        </div>
+                        <div class="project">
+                                <img src="to-do.png" alt="to do list">
+                                <button class="btn btn-light"><a
+                                                href="https://todo-goalreacher.netlify.app">Preview</a></button>
+                        </div>
+                        <div class="project">
+                                <img src="food-order-site.png" alt="to do list">
+                                <button class="btn btn-light" disabled><a href="#">Preview</a></button>
+                        </div>
+                </div>
+        </div>
+
+        <!-- ============= -->
+        <!-- contact  -->
+        <!-- ============= -->
+
+        <div class="contact">
+                <h2 class="mb-4 d-flex align-items-center">
+                        <img class="me-2 rounded" src="contact.png" alt="projects" width="36px">
+                        <span>Contact</span>
+                </h2>
+                <div class="email">
+                        <!-- message area -->
+                        <textarea id="message" class="form-control mb-4 border-5 border-dark" rows="4"
+                                placeholder="YOUR RESPONSE..."></textarea>
+                        <!-- email input -->
+                        <input id="name" type="text" class="form-control mb-3 border-5 border-dark"
+                                placeholder="Your name">
+                        <div class="user-mail">
+                                <input id="EmailAddress" type="email" class="form-control  me-2 border-5 border-dark"
+                                        placeholder="ENTER YOUR E-MAIL">
+                                <button id="send" onclick="sendMail()"
+                                        class="btn btn-info border-5 border-dark">SEND</button>
+                        </div>
+                </div>
+                <div class="social-media">
+                        <a href="https://www.instagram.com/g.b.l.venkatesh/">
+                                <img src="instagram.png" alt="instagram">
+                        </a>
+                        <a href="">
+                                <img src="twitter.png" alt="twitter">
+                        </a>
+                        <a href="https://www.linkedin.com/in/gbl-venkatesh-14667517a/">
+                                <img src="linkedin.png" alt="linkedin">
+                        </a>
+                        <a href="https://wa.me/9014034942">
+                                <img src="whatsapp.png" alt="whatsapp">
+                        </a>
+                </div>
+                <p class="text-center">ALL © COPYRIGHTS ARE RESERVED</p>
+        </div>
+</body>
+<script src="javascript.js"></script>
+
+</html>
