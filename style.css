@@ -218,7 +218,7 @@ textarea {
 
 @media(max-width: 600px) {
         .banner {
-                height: max-content;
+/*                 height: max-content; */
                 flex-direction: column;
                 justify-content: center;
                 align-items: self-start;
